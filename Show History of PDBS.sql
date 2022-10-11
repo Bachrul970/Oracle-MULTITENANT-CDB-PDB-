@@ -1,0 +1,6 @@
+set lines 299
+set pagesize 299
+col db_name for a10
+col CLONED_FROM_PDB_NAME for a12
+col pdb_name for a18
+SELECT DB_NAME, CON_ID, PDB_NAME, OPERATION, OP_TIMESTAMP, CLONED_FROM_PDB_NAME FROM CDB_PDB_HISTORY;

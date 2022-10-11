@@ -1,0 +1,1 @@
+select a.name,b.FILE_ID,b.tablespace_name,b.file_name from V$CONTAINERS a , CDB_TEMP_FILES b where a.con_id=b.con_id;
